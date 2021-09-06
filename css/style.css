@@ -1,0 +1,179 @@
+:root {
+--desaturated-red: hsl(0, 36%, 70%);
+--soft-red: hsl(0, 93%, 68%);
+--dark-grayish-red: hsl(0, 6%, 24%);
+--whitish-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+--redish-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100vw;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-rows: 10% 30% 60%;
+}
+
+#main .logo {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+#main .logo > img {
+    max-width: 35%;
+    height: auto;
+}
+
+#main .hero {
+    max-width: 100%;
+}
+
+#main > .hero .mobile-hero {
+    width: 100%;
+    height: 100%;
+}
+
+#main > .hero .desktop-hero {
+    display: none;
+}
+
+#main .presentation-section {
+    width: 100%;
+    display: grid;
+    align-items: baseline;
+    text-align: center;
+    padding: 2rem 2rem 0 2rem;
+}
+
+#main .presentation-section > div {
+    align-items: baseline;
+    display: grid;
+}
+
+#main .presentation-section > div > h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--dark-grayish-red);
+    font-weight: bolder;
+    letter-spacing: 1rem;
+    line-height: 1; 
+    padding-bottom: 1rem;
+}
+
+#main .presentation-section > div > h1 > span {
+    color: var(--desaturated-red);
+    font-weight: 600;
+}  
+
+#main .presentation-section > div > p {
+    color: var(--desaturated-red);
+    font-weight: 900;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+#main .presentation-section > div >.form {
+    width: 100%;    
+    position: relative;
+}
+
+#main .presentation-section .form > input {
+    width: 100%;
+    padding: 1.3rem 2rem;
+    color: var(--desaturated-red);
+    border: 2px solid var(--desaturated-red);
+    border-radius: 3rem;
+}
+
+#main .presentation-section .form > input::placeholder {
+    color: var(--desaturated-red)
+}
+
+#main .presentation-section .form::after {
+    content: url(../images/icon-arrow.svg);
+    width: 25%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--redish-gradient);
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 3rem;
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    #main {
+        width: 100%;
+        height: 100vh;
+        background: url("/images/bg-pattern-desktop.svg") no-repeat center center / cover;
+        position: relative;
+        font-family: 'Josefin Sans', sans-serif;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "logo hero"
+        "presentation hero";
+        grid-template-columns: 55% 45%;
+    }
+
+    #main .logo {
+        padding: 2rem 10rem;
+    }
+    
+    #main > .hero .mobile-hero {
+        position: absolute;
+        display: none;
+    }
+    
+    #main > .hero .desktop-hero {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #main .presentation-section {
+        text-align: left;
+        padding: 4rem 8rem 0 10rem;
+    }
+    
+    #main .presentation-section > div {
+        border: 2px solid blue;
+    }
+    
+    #main .presentation-section > div > h1 {
+        font-size: 4rem;
+        line-height: 1.2; 
+    }
+    
+    #main .presentation-section .form > input::placeholder {
+        color: var(--desaturated-red)
+    }
+    
+    #main .presentation-section .form::after {
+        content: url(../images/icon-arrow.svg);
+        width: 95px;
+    }
+    
+}
+
+
