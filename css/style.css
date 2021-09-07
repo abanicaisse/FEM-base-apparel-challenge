@@ -156,10 +156,6 @@ body {
         padding: 4rem 8rem 0 10rem;
     }
     
-    #main .presentation-section > div {
-        border: 2px solid blue;
-    }
-    
     #main .presentation-section > div > h1 {
         font-size: 4rem;
         line-height: 1.2; 
