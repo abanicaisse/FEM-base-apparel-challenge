@@ -29,7 +29,7 @@ Users should be able to:
 1. Desktop Design
 ![base apparel desktop preview](https://user-images.githubusercontent.com/84383548/132557130-4824f587-8582-4d8e-a2cd-fc4be18b2c41.png)
 
-1. Mobile Design 
+1. Mobile Design <br>
 ![base apparel mobile preview](https://user-images.githubusercontent.com/84383548/132556968-f1ecad5d-bfca-4b3f-a440-f5fff79c5db0.png)
 
 ### Links
