@@ -27,15 +27,15 @@ Users should be able to:
 
 ### Screenshot
 1. Desktop Design
-![Uploading Screenshot (29).png…](base apparel desktop preview)
+![base apparel desktop preview](https://user-images.githubusercontent.com/84383548/132557130-4824f587-8582-4d8e-a2cd-fc4be18b2c41.png)
 
 1. Mobile Design 
-![Uploading Screenshot (30).png…](base apparel mobile preview)
+![base apparel mobile preview](https://user-images.githubusercontent.com/84383548/132556968-f1ecad5d-bfca-4b3f-a440-f5fff79c5db0.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/abanicaisse/FEM-base-apparel-challenge)
+- Live Site URL: [Live Preview](https://codepen.io/Nicaisse/full/GRErrMb)
 
 ## My process
 
