@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -26,16 +26,19 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
+
 1. Desktop Design
-![base apparel desktop preview](https://user-images.githubusercontent.com/84383548/132557130-4824f587-8582-4d8e-a2cd-fc4be18b2c41.png)
+   ![base apparel desktop preview](https://user-images.githubusercontent.com/84383548/132557130-4824f587-8582-4d8e-a2cd-fc4be18b2c41.png)
 
 1. Mobile Design <br>
-![base apparel mobile preview](https://user-images.githubusercontent.com/84383548/132556968-f1ecad5d-bfca-4b3f-a440-f5fff79c5db0.png)
+   ![base apparel mobile preview](https://user-images.githubusercontent.com/84383548/132556968-f1ecad5d-bfca-4b3f-a440-f5fff79c5db0.png)
 
 ### Links
 
 - Solution URL: [Solution](https://github.com/abanicaisse/FEM-base-apparel-challenge)
 - Live Site URL: [Live Preview](https://codepen.io/Nicaisse/full/GRErrMb)
+
+## My Process
 
 ### Built with
 
@@ -54,84 +57,111 @@ Users should be able to:
 - HTML5 Markup
 
 Some HTML code from the project
+
 ```html
-  <main id="main">
-    <div class="logo">
-      <img src="./images/logo.svg" alt="logo">
-    </div>
+<main id="main">
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo" />
+  </div>
 
-    <div class="hero">
-      <img src="./images/hero-mobile.jpg" alt="base apparel hero" class="mobile-hero">
-      <img src="./images/hero-desktop.jpg" alt="base apparel hero" class="desktop-hero">
-    </div>
+  <div class="hero">
+    <img
+      src="./images/hero-mobile.jpg"
+      alt="base apparel hero"
+      class="mobile-hero"
+    />
+    <img
+      src="./images/hero-desktop.jpg"
+      alt="base apparel hero"
+      class="desktop-hero"
+    />
+  </div>
 
-    <div class="presentation-section">
-      <div>
-        <h1><span>We're</span> coming soon</h1>
-        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
-          up-to-date
-          with announcements and our launch deals.</p>
-        <form action="#" class="form">
-          <input type="email" name="email" id="email" placeholder="Email Address" required>
-        </form>
-      </div>
+  <div class="presentation-section">
+    <div>
+      <h1><span>We're</span> coming soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form action="#" class="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+          required
+        />
+      </form>
     </div>
-
-  </main>
+  </div>
+</main>
 ```
 
 Some CSS code from the project
+
 ```css
 :root {
---desaturated-red: hsl(0, 36%, 70%);
---soft-red: hsl(0, 93%, 68%);
---dark-grayish-red: hsl(0, 6%, 24%);
---whitish-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
---redish-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --whitish-gradient: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --redish-gradient: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100vw;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100vw;
 }
 
 #main {
-    width: 100%;
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    display: grid;
-    grid-template-rows: 10% 30% 60%;
+  width: 100%;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  grid-template-rows: 10% 30% 60%;
 }
 
 #main .logo {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
 }
 
 #main .logo > img {
-    max-width: 35%;
-    height: auto;
+  max-width: 35%;
+  height: auto;
 }
 
 #main .hero {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 #main > .hero .mobile-hero {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #main > .hero .desktop-hero {
-    display: none;
+  display: none;
 }
 ```
 
@@ -140,4 +170,3 @@ body {
 - Twitter - [@abanicaisse](https://www.twitter.com/abanicaisse)
 - Frontend Mentor - [@abanicaisse](https://www.frontendmentor.io/profile/abanicaisse)
 - CodePen - [My codepen](https://www.codepen.io/Nicaisse)
-
