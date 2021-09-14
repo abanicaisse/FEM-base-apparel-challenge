@@ -104,7 +104,7 @@ body {
 }
 
 #main .presentation-section .form::after {
-    content: url(../images/icon-arrow.svg);
+    content: url('../images/icon-arrow.svg');
     width: 25%;
     height: 100%;
     display: grid;
@@ -125,7 +125,7 @@ body {
     #main {
         width: 100%;
         height: 100vh;
-        background: url("/images/bg-pattern-desktop.svg") no-repeat center center / cover;
+        background: url("./images/bg-pattern-desktop.svg") no-repeat center center / cover;
         position: relative;
         font-family: 'Josefin Sans', sans-serif;
         display: grid;
@@ -166,7 +166,7 @@ body {
     }
     
     #main .presentation-section .form::after {
-        content: url(../images/icon-arrow.svg);
+        content: url('../images/icon-arrow.svg');
         width: 95px;
     }
     
