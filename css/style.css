@@ -89,6 +89,7 @@ body {
 #main .presentation-section > div >.form {
     width: 100%;    
     position: relative;
+    margin-bottom: 3rem;
 }
 
 #main .presentation-section .form > input {
@@ -103,20 +104,40 @@ body {
     color: var(--desaturated-red)
 }
 
-#main .presentation-section .form::after {
-    content: url('../images/icon-arrow.svg');
+.form .error {
+    position: absolute;
+    display: none;
+    top: 30%;
+    bottom: 0;
+    right: 26%;
+}
+
+.form .error-message {
+    display: none;
+    color: var(--soft-red);
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: 2rem;
+}
+
+#submit {
     width: 25%;
     height: 100%;
     display: grid;
     place-items: center;
     background: var(--redish-gradient);
     color: white;
+    border: 2px solid var(--desaturated-red);
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     border-radius: 3rem;
+}
 
+#submit:hover {
+    background: var(--redish-gradient);
+    opacity: .5;
 }
 
 
@@ -125,7 +146,7 @@ body {
     #main {
         width: 100%;
         height: 100vh;
-        background: url("./images/bg-pattern-desktop.svg") no-repeat center center / cover;
+        background: url("../images/bg-pattern-desktop.svg") no-repeat center center / cover;
         position: relative;
         font-family: 'Josefin Sans', sans-serif;
         display: grid;
@@ -165,8 +186,7 @@ body {
         color: var(--desaturated-red)
     }
     
-    #main .presentation-section .form::after {
-        content: url('../images/icon-arrow.svg');
+    #submit {
         width: 95px;
     }
     
